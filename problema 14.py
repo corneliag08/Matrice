@@ -1,13 +1,13 @@
-n=int(input('Dati dimensiunea matricii:'))
-a=[]
-if n>=2 and n<=10:
-    for i in range (0,n):
-        v=[]
-        for j in range (0,n):
-            x=int(input('dati numarul: '))
-            v.append([x]) 
-        a.append([v])
-    print(a)
+a=int(input('Dati dimensiunea matricii:'))
+n=[]
+if a>=2 and a<=10:
+    for linie in range (0,n):
+        linie=[]
+        for element in range (0,n):
+            element=int(input('dati numarul: '))
+            linie.append([element]) 
+        n.append([linie])
+    print(n)
     d_principala=[]
     d_secundara=[]
     msd_principala=[]
