@@ -1,12 +1,11 @@
 a=int(input('Dati dimensiunea matricii:'))
 n=[]
 if a>=2 and a<=10:
-    for linie in range (0,n):
-        linie=[]
-        for element in range (0,n):
-            element=int(input('dati numarul: '))
-            linie.append([element]) 
-        n.append([linie])
+    for i in range(a):
+        list = []
+        for j in range(a):
+            list.append(int(input(f'Dati element pe pozitia: ')))
+        n.append(list)
     print(n)
     d_principala=[]
     d_secundara=[]
@@ -27,10 +26,13 @@ if a>=2 and a<=10:
             if (i+j)<(len(n)-1):
                 msd_secundara.append(n[i][j])
             if (i+j)>(len(n)-1):
-                mjd_secundara.append(n[i[j]])
+                mjd_secundara.append(n[i][j])
 print("Suma componentelor care se afla pe diagonala principala este",sum(d_principala))
-print("Suma componentelor care se afla pe diagonala secundara este",sum(d_secundara))
-print("Suma componentelor care se afla mai sus de diagonala princiapla este ",sum(msd_principala))
-print("Suma componentelor care se afla mai jos de diagonala princiapla este",sum(mjd_principala))
-print("Suma componentelor care se afla mai sus de diagonala principala este",sum(msd_secundara))
-print("Suma componentelor care se afla mai jos de diagonala principala este",sum(mjd_secundara))
+print("Suma componentelor care se afla pe diagonal")
+if a>=2 and a<=10:
+    for i in range(a):
+        list = []
+        for j in range(a):
+            list.append(int(input(f'Dati element pe pozitia: ')))
+        n.append(list)
+    print(n)
